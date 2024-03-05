@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  background: #fff;
+  transition: background 0.5s ease;
+  margin: 0;
+  overflow: hidden; /* Prevent horizontal scrollbar */
+}
+
+#container {
+  height: auto;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  margin: 15% auto 0;
+  align-items: center;
+  flex-direction: column;
+  border: 0 solid #fff;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background: #fff;
+  transition: background 0.5s ease;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+}
+
+h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Include transform transition */
+}
+
+h1 span:hover {
+  transform: scale(
+    1.5
+  ); /* Adjust the scale factor for the desired size increase */
+}
+
+/* Night mode styles */
+body.night-mode {
+  background: #222;
+  color: #fff;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 4rem;
+  width: 75%;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  align-items: center;
+  border-radius: 10px;
+  border: 0 solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  height: 4rem;
+  width: 75%;
+  transition: background 0.5s ease;
+}
+
+#num1,
+#num2,
+#operation {
+  margin-bottom: 8px;
+  height: 1.5rem;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #000;
+  transition: box-shadow 0.5s ease; /* Add transition for smooth effect */
+}
+
+#num1,
+#num2 {
+  width: 5rem;
+}
+#num2 {
+  margin-bottom: 8px;
+}
+
+#operation {
+  width: 2.5rem;
+}
+
+#calculate {
+  margin-bottom: 6px;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #007bff; /* Bootstrap primary color */
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary color */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  border-color: #0056b3; /* Darker shade for hover effect */
+  color: #fff;
+}
+
+/* Style for a button with Bootstrap's danger color */
+.button-danger {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #dc3545; /* Bootstrap danger color */
+  color: #fff;
+  background-color: #dc3545; /* Bootstrap danger color */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.button-danger:hover {
+  background-color: #bd2130; /* Darker shade for hover effect */
+  border-color: #bd2130; /* Darker shade for hover effect */
+  color: #fff;
+}
+
+body.night-mode #num1,
+body.night-mode #num2,
+body.night-mode #operation {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Night mode box shadow color */
+  background-color: #333;
+  color: #fff;
+}
+
+body.night-mode #result {
+  background: #333; /* Night mode background color */
+  border-color: #fff; /* Night mode border color */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Night mode box shadow color */
+}
+
+#container.night-mode {
+  background: #333;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.iphone-slider-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-label {
+  margin-right: 10px;
+}
+
+.iphone-slider-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.iphone-slider-switch input {
+  display: none;
+}
+
+.iphone-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d3d3d3;
+  border-radius: 34px;
+  transition: background 0.4s;
+}
+
+.iphone-slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+input:checked + .iphone-slider {
+  background-color: #007bff;
+}
+
+input:checked + .iphone-slider:before {
+  transform: translateX(26px);
+}

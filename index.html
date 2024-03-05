@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="iphone-slider-container">
+      <span class="slider-label poppins-regular">Night Mode:</span>
+      <label class="iphone-slider-switch">
+        <input type="checkbox" id="nightModeCheckbox" />
+        <span class="iphone-slider"></span>
+      </label>
+    </div>
+    <div id="container" class="poppins-extrabold">
+      <h1>
+        <span>C</span>
+        <span>A</span>
+        <span>L</span>
+        <span>C</span>
+        <span>U</span>
+        <span>L</span>
+        <span>A</span>
+        <span>T</span>
+        <span>O</span>
+        <span>R</span>
+      </h1>
+      <div id="result" value="" class="poppins-semibold"></div>
+      <input type="number" id="num1" class="poppins-regular" />
+      <label for="operation">
+        <select name="operation" id="operation" class="poppins-regular">
+          <option value=""></option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </label>
+      <input type="number" id="num2" class="poppins-regular" />
+      <input
+        id="calculate"
+        type="button"
+        value="Calculate"
+        class="button-primary poppins-medium"
+      />
+      <input
+        id="clear"
+        type="button"
+        value="Clear"
+        id="clear"
+        class="button-danger poppins-medium"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
